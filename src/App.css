@@ -1,5 +1,43 @@
+/* create a responsive 5 rows grid layout with nav area, main area, item1 area, itme2 area, and footer area*/
+/* Language: css */
+/* Path: comingsoon\src\App.css */
 .App {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "nav"
+    "main"
+    "item1"
+    "item2"
+    "footer";
+}
+.customcolor {
+  background: linear-gradient(180deg, #00ccff 0%, #7465e4 100%);
+}
+.navv {
+  grid-area: nav;
+}
+.main {
   text-align: center;
+  grid-area: main;
+  background: #ffff56;
+}
+.item1 {
+  text-align: center;
+  grid-area: item1;
+  background: linear-gradient(180deg, #00ccff 0%, #7465e4 100%);
+}
+.item2 {
+  text-align: center;
+  grid-area: item2;
+  background-color: #ffff56;
+}
+.footer {
+  text-align: center;
+  grid-area: footer;
+  background: linear-gradient(180deg, #00ccff 0%, #7465e4 100%);
 }
 
 .App-logo {
