@@ -63,8 +63,8 @@ function App() {
         <div>
           {" "}
           <img alt="" src="/favicon.ico" width="50px" height="50px" />
-          <h3>Jopasavvy</h3>
-          <h5>Coming soon!</h5>
+          <h4>Jopasavvy</h4>
+          <h6>Coming soon!</h6>
           <p>
             Our mission as a company is to provide packages that can be paid for
             without stress. This is the sole aim of jopa savvy global limited,
@@ -73,13 +73,20 @@ function App() {
           </p>
         </div>
         <div>
-          <h3>Sign up</h3>
+          <h4>Sign up</h4>
         </div>
       </div>
       <div className="item1">
-        <div>
+        <div
+          style={{
+            paddingLeft: "5em",
+            paddingRight: "5em",
+            paddingBotton: "5em",
+            paddingTop: "1em",
+          }}
+        >
           {" "}
-          <h3>About us</h3>
+          <h4>About us</h4>
           <p>
             Jopasavvy Global is a dynamic company focused on helping the average
             Nigerian meet up with their Household need through daily
@@ -91,14 +98,18 @@ function App() {
 
         <div>
           {" "}
-          <h3>Our Vision</h3>
+          <h4>Our Vision</h4>
           <p>
             Our vision is to eradicate lack by making all daily needs accessible
             to every Nigerians and beyond.
           </p>
         </div>
       </div>
-      <div className="item2">slogan, socials, quicklinks</div>
+      <div className="item2">
+        <h4>Jopasavvy</h4>
+        <h4>Quick Links</h4>
+        <h4>Follow Us</h4>
+      </div>
       <div className="footer">
         <footerSection>
           <Center>
