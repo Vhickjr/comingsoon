@@ -22,7 +22,7 @@
 .main {
   text-align: center;
   grid-area: main;
-  background: #ffff56;
+  background: rgb(239, 239, 239);
 }
 .item1 {
   text-align: center;
@@ -32,7 +32,10 @@
 .item2 {
   text-align: center;
   grid-area: item2;
-  background-color: #ffff56;
+  background: rgb(239, 239, 239);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .footer {
   text-align: center;
