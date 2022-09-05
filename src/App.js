@@ -5,12 +5,28 @@ import Navbar from "react-bootstrap/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaRegCopyright } from "react-icons/fa";
 import styled from "styled-components";
-import NewsletterSubscribe from "./NewsLetterSubscribe";
+import emailjs from "@emailjs/browser";
+
 const Center = styled.div`
   margin: 20px auto;
 `;
 
 function App() {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_uzujr4h",
+        "template_23cdkcq",
+        e.target,
+        "dfKvdTRbroAo0kBGF"
+      )
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => console.log(err));
+  }
   return (
     <div className="App">
       <div className="customcolor navv">
@@ -60,7 +76,52 @@ function App() {
           </p>
         </div>
         <div>
-          <NewsletterSubscribe />
+          <form
+            style={{
+              paddingTop: "3em",
+              paddingBottom: "3em",
+              justifyContent: "center",
+            }}
+            onSubmit={sendEmail}
+          >
+            <div>
+              <input
+                type="name"
+                placeholder="Full name"
+                style={{
+                  width: "500px",
+                  height: "50px",
+                  borderRadius: "5px",
+                  paddingLeft: "25px",
+                }}
+              ></input>
+            </div>
+            <div style={{ display: "inline-flex", paddingTop: "20px" }}>
+              <input
+                type="email"
+                placeholder="Email"
+                style={{
+                  width: "400px",
+                  height: "50px",
+                  borderRadius: "5px",
+                  paddingLeft: "25px",
+                }}
+              ></input>
+            </div>
+            <button
+              type="submit"
+              value="send"
+              style={{
+                width: "100px",
+                height: "50px",
+                borderRadius: "5px",
+                color: "white",
+                backgroundColor: "black",
+              }}
+            >
+              Subscribe
+            </button>
+          </form>
         </div>
       </div>
       <div className="item1">
@@ -105,10 +166,18 @@ function App() {
         <div>
           <h4>Follow Us</h4>
           <h6>
-            <a href="https://web.facebook.com/Jopa_Savvy">Facebook</a>
+            <a
+              style={{ textDecoration: "none" }}
+              href="https://web.facebook.com/Jopa_Savvy"
+            >
+              Facebook
+            </a>
           </h6>
           <h6 href="https://twitter.com/Jopasavvy">Twitter</h6>
-          <a href="https://www.instagram.com/Jopasavvy_GL/">
+          <a
+            style={{ textDecoration: "none" }}
+            href="https://www.instagram.com/Jopasavvy_GL/"
+          >
             <h6>Instagram</h6>
           </a>
         </div>
