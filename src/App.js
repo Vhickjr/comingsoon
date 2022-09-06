@@ -89,19 +89,19 @@ function App() {
                 type="name"
                 placeholder="Full name"
                 style={{
-                  width: "500px",
+                  width: "70%",
                   height: "50px",
                   borderRadius: "5px",
                   paddingLeft: "25px",
                 }}
               ></input>
             </div>
-            <div style={{ display: "inline-flex", paddingTop: "20px" }}>
+            <div style={{ paddingTop: "20px" }}>
               <input
                 type="email"
                 placeholder="Email"
                 style={{
-                  width: "400px",
+                  width: "70%",
                   height: "50px",
                   borderRadius: "5px",
                   paddingLeft: "25px",
@@ -112,11 +112,12 @@ function App() {
               type="submit"
               value="send"
               style={{
-                width: "100px",
+                width: "70%",
                 height: "50px",
                 borderRadius: "5px",
                 color: "white",
                 backgroundColor: "black",
+                marginTop: "20px",
               }}
             >
               Subscribe
