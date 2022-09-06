@@ -40,14 +40,14 @@ function App() {
                 height="30px"
                 className="d-inline-block align-top"
               />{" "}
-              Jopasavvy
+              <a id="Joppa_savvy"> Jopasavvy</a>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#link">About us</Nav.Link>
-                <Nav.Link href="#link">Contact</Nav.Link>
+                <Nav.Link href="#Jopa_savvy">Home</Nav.Link>
+                <Nav.Link href="#About_us">About us</Nav.Link>
+                <Nav.Link href="#Contact">Contact</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -57,8 +57,8 @@ function App() {
       <div
         className="main"
         style={{
-          paddingLeft: "5em",
-          paddingRight: "5em",
+          paddingLeft: "1em",
+          paddingRight: "1em",
           paddingBotton: "5em",
           paddingTop: "1em",
         }}
@@ -76,6 +76,10 @@ function App() {
           </p>
         </div>
         <div>
+          <a id="Contact">
+            {" "}
+            <h5>Subscribe to out Newsletter!</h5>
+          </a>
           <form
             style={{
               paddingTop: "3em",
@@ -128,14 +132,17 @@ function App() {
       <div className="item1">
         <div
           style={{
-            paddingLeft: "5em",
-            paddingRight: "5em",
+            paddingLeft: "1em",
+            paddingRight: "1em",
             paddingBotton: "5em",
             paddingTop: "1em",
           }}
         >
           {" "}
-          <h4>About us</h4>
+          <a id="About_us">
+            {" "}
+            <h4>About us</h4>
+          </a>
           <p>
             Jopasavvy Global is a dynamic company focused on helping the average
             Nigerian meet up with their Household need through daily
@@ -145,7 +152,12 @@ function App() {
           </p>
         </div>
 
-        <div>
+        <div
+          style={{
+            paddingLeft: "1em",
+            paddingRight: "1em",
+          }}
+        >
           {" "}
           <h4>Our Vision</h4>
           <p>
@@ -155,28 +167,47 @@ function App() {
         </div>
       </div>
       <div className="item2">
-        <div>
-          <h4>Jopasavvy</h4>
-          <h9>The new way to buy</h9>
+        <div style={{ width: "300px" }}>
+          <h2>Jopasavvy</h2>
+          <h4>The new way to buy</h4>
         </div>
-        <div>
+        <div style={{ width: "300px" }}>
           <h4>Quick Links</h4>
-          <h6>Home</h6>
-          <h6>About</h6> <h6>Contact</h6>
+          <a
+            href="Jopasavvy"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            <h6>Home</h6>
+          </a>
+          <a
+            href="#About_us"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            <h6>About</h6>{" "}
+          </a>{" "}
+          <a href="Contact" style={{ textDecoration: "none", color: "black" }}>
+            <h6>Contact</h6>
+          </a>
         </div>
-        <div>
+        <div style={{ width: "300px" }}>
           <h4>Follow Us</h4>
           <h6>
             <a
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: "none", color: "black" }}
               href="https://web.facebook.com/Jopa_Savvy"
             >
               Facebook
             </a>
           </h6>
-          <h6 href="https://twitter.com/Jopasavvy">Twitter</h6>
           <a
-            style={{ textDecoration: "none" }}
+            href="https://twitter.com/JopaSavvy?s=20&t=DRvpCy09V1X_6hwHG1cufA"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            {" "}
+            <h6>Twitter</h6>
+          </a>
+          <a
+            style={{ textDecoration: "none", color: "black" }}
             href="https://www.instagram.com/Jopasavvy_GL/"
           >
             <h6>Instagram</h6>
